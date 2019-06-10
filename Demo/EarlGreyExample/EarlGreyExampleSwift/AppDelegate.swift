@@ -24,5 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     return true
   }
+    
+    public func updateRootViewController() {
+       self.window?.rootViewController = UIViewController()
+    }
 }
 

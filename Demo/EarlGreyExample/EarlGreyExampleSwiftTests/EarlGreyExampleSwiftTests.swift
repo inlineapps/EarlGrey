@@ -22,6 +22,8 @@ import XCTest
 class EarlGreyExampleSwiftTests: XCTestCase {
 
   func testBasicSelection() {
+    (UIApplication.shared.delegate as! AppDelegate).updateRootViewController()
+    (UIApplication.shared.delegate as! AppDelegate).updateRootViewController()
     // Select the button with Accessibility ID "clickMe".
     // This should throw a warning for "Result of Call Unused."
     EarlGrey.selectElement(with: grey_accessibilityID("ClickMe"))
